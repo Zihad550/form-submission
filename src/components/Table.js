@@ -29,13 +29,23 @@ const DataTable = () => {
       <TableContainer component={Paper}>
         <Table size="large">
           <TableHead>
-            <TableRow>
-              <TableCell>Project Name</TableCell>
-              <TableCell align="right">Client Name</TableCell>
-              <TableCell align="right">Panel Name</TableCell>
-              <TableCell align="right">Page Name</TableCell>
-              <TableCell align="right">Section Name</TableCell>
-              <TableCell align="right">Events Name</TableCell>
+            <TableRow sx={{ background: "gray" }}>
+              <TableCell sx={{ color: "white" }}>Project Name</TableCell>
+              <TableCell sx={{ color: "white" }} align="right">
+                Client Name
+              </TableCell>
+              <TableCell sx={{ color: "white" }} align="right">
+                Panel Name
+              </TableCell>
+              <TableCell sx={{ color: "white" }} align="right">
+                Page Name
+              </TableCell>
+              <TableCell sx={{ color: "white" }} align="right">
+                Section Name
+              </TableCell>
+              <TableCell sx={{ color: "white" }} align="right">
+                Events Name
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
