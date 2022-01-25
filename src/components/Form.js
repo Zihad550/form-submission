@@ -20,7 +20,7 @@ const Form = () => {
   const handleSubmit = (e) => {
     setIsInserted(false);
     e.preventDefault();
-    fetch("http://localhost:8000/data", {
+    fetch("https://fierce-taiga-31205.herokuapp.com/data", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -42,8 +42,8 @@ const Form = () => {
         justifyContent: "center",
       }}
     >
-      {isInserted && <Alert severity="success">Successfully added</Alert>}
       <form onSubmit={handleSubmit}>
+        {isInserted && <Alert severity="success">Successfully added</Alert>}
         <TextField
           onBlur={handleFieldData}
           fullWidth
